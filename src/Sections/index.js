@@ -5,6 +5,7 @@ import { Hero } from './Hero';
 import { ProductCollection } from './ProductCollection';
 import { ProductBlock } from './ProductBlock';
 import { ValueProps } from './ValueProps';
+import { HorizontalScroll } from './HorizontalScroll';
 import { Footer } from './Footer';
 
 export {
@@ -15,5 +16,6 @@ export {
   ProductCollection,
   ProductBlock,
   ValueProps,
+  HorizontalScroll,
   Footer,
 };

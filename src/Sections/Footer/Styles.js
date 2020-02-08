@@ -3,7 +3,7 @@ import { smallBlock } from '../../StyleHelpers';
 
 export const FooterContainer = styled.footer`
   ${smallBlock};
-  background-color: rgb(33, 97, 140);
+  background-color: rgb(27, 79, 114);
   color: white;
   height: 500px;
 `;

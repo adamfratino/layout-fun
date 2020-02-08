@@ -9,6 +9,7 @@ import {
   ProductCollection,
   ProductBlock,
   ValueProps,
+  HorizontalScroll,
   Footer,
 } from './Sections';
 
@@ -24,7 +25,9 @@ const App = () => (
       <ProductCollection count={5}/>
       <ProductBlock />
       <ProductBlock reverse />
+      <ProductBlock />
       <ValueProps count={3} />
+      <HorizontalScroll count={4} />
       <Footer />
     </Main>
   </>
