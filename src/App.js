@@ -1,5 +1,7 @@
 import * as React from "react";
 import { Normalize } from 'styled-normalize';
+import './App.css';
+
 import styled from 'styled-components';
 import {
   Header,
@@ -42,7 +44,6 @@ const Main = styled.main`
   overflow-y: scroll;
   scroll-padding: 20px;
   scroll-snap-type: y proximity;
-  font-family: Helvetica, Arial, sans-serif;
 
   & > * {
     scroll-snap-align: start;

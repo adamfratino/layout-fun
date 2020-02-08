@@ -3,7 +3,7 @@ import { smallBlock } from '../../StyleHelpers';
 
 export const HorizontalScrollContainer = styled.section`
   overflow-x: scroll;
-  height: 80vh;
+  height: calc(100vh - 40px);
   width: 100vw;
   align-items: stretch;
   scroll-snap-type: x mandatory;

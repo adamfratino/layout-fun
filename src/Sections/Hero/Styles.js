@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { h1, h4 } from '../../StyleHelpers';
 
 export const HeroContainer = styled.section`
   display: flex;
@@ -7,19 +8,17 @@ export const HeroContainer = styled.section`
   justify-content: center;
   background-color: rgb(255, 248, 225);
   padding: 40px;
-  height: calc(100vh - 160px);
+  height: calc(100vh - 80px);
 
   h1 {
-    font-size: 86px;
-    line-height: 0.95;
-    max-width: 720px;
-    margin: 0 0 30px;
+    ${h1};
+    max-width: 840px;
+    margin-bottom: 40px;
   }
 
   h2 {
-    margin: 0;
-    font-size: 18px;
+    ${h4};
+    margin: 0;    
     max-width: 500px;
-    line-height: 1.4;
   }
 `

@@ -1,5 +1,31 @@
+@font-face {
+  font-family: 'Blocks';
+  src: url(./blocks.woff2) format('woff2');
+}
+
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Blocks', Helvetica, sans-serif;
+}
+
+body h1, 
+body h2, 
+body h3, 
+body h4, 
+body h5, 
+body h6, 
+body p, 
+body ul, 
+body ol, 
+body li {
   margin: 0;
   padding: 0;
+}
+
+body small {
+  font-size: 8px;
+  line-height: 1.4;
 }
