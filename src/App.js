@@ -1,4 +1,6 @@
 import * as React from "react";
+import { throttle } from 'frame-throttle';
+import { useCallback, useEffect, useState, useRef } from 'react';
 import { Normalize } from 'styled-normalize';
 import './App.css';
 
@@ -15,25 +17,48 @@ import {
   Footer,
 } from './Sections';
 
-const App = () => (
-  <>
-    <Normalize />
-    <Main>
-      <Header>
-        <Promo />
-        <Navigation />
-      </Header>
-      <Hero />
-      <ProductCollection count={5}/>
-      <ProductBlock />
-      <ProductBlock reverse />
-      <ProductBlock />
-      <ValueProps count={3} />
-      <HorizontalScroll count={4} />
-      <Footer />
-    </Main>
-  </>
-);
+const App = () => {
+  const container = useRef(null);
+
+  const [scroll, setScroll] = useState({
+    position: 0,
+  });
+
+  const listener = useCallback(throttle(() => {
+    setScroll(() => ({
+      position: container.current.scrollTop,
+    }));
+  }));
+
+  useEffect(() => {
+    const currentContainer = container.current
+
+    if (container.current) {
+      currentContainer.addEventListener('scroll', listener);
+    }
+    return () => currentContainer.removeEventListener('scroll', listener);
+  }, [container, listener]);
+
+  return (
+    <>
+      <Normalize />
+      <Main ref={container}>
+        <Header position={scroll.position}>
+          <Promo />
+          <Navigation />
+        </Header>
+        <Hero />
+        <ProductCollection count={5}/>
+        <ProductBlock />
+        <ProductBlock reverse />
+        <ProductBlock />
+        <ValueProps count={3} />
+        <HorizontalScroll count={4} />
+        <Footer />
+      </Main>
+    </>
+  )
+  };
 
 export default App;
 

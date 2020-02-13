@@ -3,7 +3,7 @@ import { ProductCollectionContainer } from './Styles';
 
 const ProductCollection = ({ count }) => (
   <ProductCollectionContainer>
-    {[...Array(count)].map(el => <div>Product Collection</div>)}
+    {[...Array(count)].map((el, i) => <div key={i}>Product Collection</div>)}
   </ProductCollectionContainer>
 );
 

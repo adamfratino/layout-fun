@@ -29,7 +29,8 @@ export const ProductBlockContainer = styled.section`
       padding: 20px;
       color: white;
       height: 80%;
-      width: 50%;
+      width: 100%;
+      max-width: 350px;
       background-color: ${props => props.theme.reverse ? `rgb(20, 90, 50)` : `${darken('0.1', 'rgb(20, 90, 50)')}`};
     }
   }

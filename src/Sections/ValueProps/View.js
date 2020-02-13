@@ -3,7 +3,7 @@ import { ValuePropsContainer } from './Styles';
 
 const ValueProps = ({ count }) => (
   <ValuePropsContainer>
-    {[...Array(count)].map(el => <div>Value Proposition</div>)}
+    {[...Array(count)].map((el, i) => <div key={i}>Value Proposition</div>)}
   </ValuePropsContainer>
 );
 
