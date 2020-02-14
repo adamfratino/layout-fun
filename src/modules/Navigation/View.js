@@ -1,8 +1,8 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { navigation } from '../../../themes/active-themes';
+import { navigation } from '../../themes/active-themes';
 import { NavigationContainer } from './Styles';
-import { Links, Hamburger } from './Components';
+import { Links, Hamburger } from './components';
 
 const Navigation = () => (
   <ThemeProvider theme={{ mode: navigation }}>

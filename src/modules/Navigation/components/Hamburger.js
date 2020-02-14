@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { hamburgerLineColor } from '../../../../themes/navigation';
+import { hamburgerLineColor } from '../../../themes/navigation';
 
 const Hamburger = () => {
   const [isFlyoutOpen, toggleFlyout] = useState(false);

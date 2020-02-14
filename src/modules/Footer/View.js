@@ -1,12 +1,15 @@
 import * as React from 'react';
-import { Colophon } from './Colophon';
+import { ThemeProvider } from 'styled-components';
+import { Colophon } from '../Colophon';
 import { FooterContainer } from './Styles';
 
 const Footer = () => (
-  <>
-    <FooterContainer>Footer</FooterContainer>
-    <Colophon />
-  </>
+  <ThemeProvider theme={{mode: 'light'}}>
+    <FooterContainer>
+      <div></div>
+      <Colophon />
+    </FooterContainer>
+  </ThemeProvider>
 );
 
 export default Footer;

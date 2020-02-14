@@ -1,6 +1,6 @@
 import { Header } from './Header';
-import { Promo } from './Header/Promo';
-import { Navigation } from './Header/Navigation';
+import { Promo } from './Promo';
+import { Navigation } from './Navigation';
 import { Hero } from './Hero';
 import { ProductCollection } from './ProductCollection';
 import { ProductBlock } from './ProductBlock';

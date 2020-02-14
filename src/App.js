@@ -7,13 +7,11 @@ import './App.css';
 import styled from 'styled-components';
 import {
   Header,
-  Promo,
-  Navigation,
   Hero,
-  ProductCollection,
-  ProductBlock,
-  ValueProps,
-  HorizontalScroll,
+  // ProductCollection,
+  // ProductBlock,
+  // ValueProps,
+  // HorizontalScroll,
   Footer,
 } from './modules';
 
@@ -43,17 +41,14 @@ const App = () => {
     <>
       <Normalize />
       <Main ref={container}>
-        <Header position={scroll.position}>
-          <Promo />
-          <Navigation />
-        </Header>
+        <Header position={scroll.position} />
         <Hero />
-        <ProductCollection count={5}/>
+        {/* <ProductCollection count={5}/>
         <ProductBlock />
         <ProductBlock reverse />
         <ProductBlock />
         <ValueProps count={3} />
-        <HorizontalScroll count={4} />
+        <HorizontalScroll count={4} /> */}
         <Footer />
       </Main>
     </>

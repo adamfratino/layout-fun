@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { smallBlock, NAV_HEIGHT } from '../../../helpers';
-import { backgroundColor, boxShadow, fontColor, collapsedBackgroundColor } from '../../../themes/navigation';
+import { smallBlock, NAV_HEIGHT } from '../../helpers';
+import { backgroundColor, boxShadow, fontColor, collapsedBackgroundColor } from '../../themes/navigation';
 
 export const NavigationContainer = styled.nav`
   ${smallBlock};

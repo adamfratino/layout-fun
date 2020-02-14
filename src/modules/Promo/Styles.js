@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { PROMO_HEIGHT, smallBlock } from '../../../helpers';
-import { backgroundColor, fontColor, fontColorInverse } from '../../../themes/promo';
+import { PROMO_HEIGHT, smallBlock } from '../../helpers';
+import { backgroundColor, fontColor, fontColorInverse } from '../../themes/promo';
 
 export const PromoContainer = styled.aside`
   ${smallBlock};

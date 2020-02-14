@@ -1,3 +1,4 @@
-export const promo = `primary`;
+export const promo = `light`;
 export const navigation = `dark`;
-export const hero = `dark`;
+export const hero = `primary`;
+export const footer = `light`;

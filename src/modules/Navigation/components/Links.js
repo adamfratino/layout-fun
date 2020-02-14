@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { hoverLineColor } from '../../../../themes/navigation';
+import { hoverLineColor } from '../../../themes/navigation';
 
 const Links = () => (
   <LinksContainer>
