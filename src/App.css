@@ -1,5 +1,6 @@
 @font-face {
   font-family: 'Blocks';
+  font-display: swap;
   src: url(./blocks.woff2) format('woff2');
 }
 
