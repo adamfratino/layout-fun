@@ -5,7 +5,7 @@ import { PromoContainer }  from './Styles';
 const Promo = () => (
   <ThemeProvider theme={{ mode: 'primary' }}>
     <PromoContainer>
-      <span>This is the promotion we'll use to sell all our products!</span>
+      <p>This is the promotion we'll <span>use to sell</span> all our products!</p>
     </PromoContainer>
   </ThemeProvider>
 );

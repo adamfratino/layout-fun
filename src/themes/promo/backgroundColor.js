@@ -1,8 +1,8 @@
 import theme from 'styled-theming';
-import { grey, red } from '@material-ui/core/colors';
+import { black, white, red } from '../colors';
 
 export const backgroundColor = theme('mode', {
-  light: grey[50],
-  dark: grey[900],
-  primary: red[500],
+  light: white,
+  dark: black,
+  primary: red,
 });

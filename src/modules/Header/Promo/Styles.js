@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { PROMO_HEIGHT, smallBlock } from '../../../helpers';
-import { backgroundColor, fontColor } from '../../../themes/promo';
+import { backgroundColor, fontColor, fontColorInverse } from '../../../themes/promo';
 
 export const PromoContainer = styled.aside`
   ${smallBlock};
@@ -9,4 +9,8 @@ export const PromoContainer = styled.aside`
   height: ${PROMO_HEIGHT}px;
   justify-content: center;
   position: relative;
+
+  span {
+    color: ${fontColorInverse};
+  }
 `;

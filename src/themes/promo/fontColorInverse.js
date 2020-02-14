@@ -1,8 +1,8 @@
 import theme from 'styled-theming';
 import { black, white } from '../colors';
 
-export const backgroundColor = theme('mode', {
+export const fontColorInverse = theme('mode', {
   light: white,
   dark: black,
-  transparent: 'transparent',
+  primary: white,
 });
