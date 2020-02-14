@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { NAV_HEIGHT } from '../../StyleHelpers';
+import { PROMO_HEIGHT, NAV_HEIGHT } from '../../StyleHelpers';
 
 export const HeaderContainer = styled.header`
   position: sticky;
-  top: -110px;
+  top: -${NAV_HEIGHT + PROMO_HEIGHT - 10}px;
   box-shadow: 0 0 4rem -1rem black;
   transition: all 250ms ease;
   z-index: 2;

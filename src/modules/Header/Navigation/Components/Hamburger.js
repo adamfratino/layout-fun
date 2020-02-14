@@ -1,30 +1,40 @@
-import * as React from 'react';
+import React, { useState, useCallback } from 'react';
 import styled from 'styled-components';
 import { NAV_HEIGHT } from '../../../../StyleHelpers';
 
-const Hamburger = () => (
-  <Container>
-    <Line />
-    <Line />
-    <Line />
-  </Container>
-);
+const Hamburger = () => {
+  const [isFlyoutOpen, toggleFlyout] = useState(false);
+
+  const handler = () => toggleFlyout(!isFlyoutOpen);
+
+  return (
+    <Container
+      onClick={handler}
+      className={isFlyoutOpen ? 'is-active' : undefined}
+    >
+      <Line />
+      <Line />
+      <Line />
+    </Container>
+  );
+};
 
 export default Hamburger;
 
-const CONTAINER_HEIGHT = NAV_HEIGHT / 3;
+const CONTAINER_HEIGHT = 20;
 const CONTAINER_WIDTH = CONTAINER_HEIGHT * 1.25;
 const LINE_HEIGHT = CONTAINER_HEIGHT / 5;
 const TRANSITION_TIME = 250;
 
 const Container = styled.div`
+  cursor: pointer;
   display: inline-block;
   height: ${CONTAINER_HEIGHT}px;
   position: relative;
   transition: transform 200ms ease;
   width: ${CONTAINER_WIDTH}px;
 
-  &:hover {
+  &.is-active {
     span {
       &:first-of-type,
       &:last-of-type {
@@ -38,6 +48,7 @@ const Container = styled.div`
         &::after { transform: rotate(-90deg); }
       }
     }
+  }
 `;
 
 const Line = styled.span`

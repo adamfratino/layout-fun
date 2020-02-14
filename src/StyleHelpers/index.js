@@ -1,7 +1,8 @@
 import { css } from 'styled-components';
 import { darken } from 'polished';
 
-export const NAV_HEIGHT = 60;
+export const PROMO_HEIGHT = 60;
+export const NAV_HEIGHT = 80;
 
 export const smallBlock = css`
   display: flex;

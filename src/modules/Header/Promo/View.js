@@ -3,7 +3,7 @@ import { PromoContainer }  from './Styles';
 
 const Promo = () => (
   <PromoContainer>
-    Promotion
+    <span>This is the promotion we'll use to sell all our products!</span>
   </PromoContainer>
 );
 

@@ -15,7 +15,7 @@ import {
   ValueProps,
   HorizontalScroll,
   Footer,
-} from './Sections';
+} from './modules';
 
 const App = () => {
   const container = useRef(null);
