@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { hamburgerLineColor } from '../../../themes/navigation';
+import { hamburgerLineColor, hamburgerLineColorHover } from '../../../themes/navigation';
 
 export const Hamburger = () => {
   const [isFlyoutOpen, toggleFlyout] = useState(false);
@@ -32,6 +32,18 @@ const Container = styled.div`
   transition: transform 200ms ease;
   width: ${CONTAINER_WIDTH}px;
 
+  &:hover {
+    span:first-of-type,
+    span:last-of-type,
+    span:nth-of-type(2) {
+      background-color: ${hamburgerLineColorHover};
+      &::after {
+        background-color: ${hamburgerLineColorHover};
+        transition-delay: 0ms;
+      }
+    }
+  }
+
   &.is-active {
     span {
       &:first-of-type,
@@ -43,7 +55,10 @@ const Container = styled.div`
       &:nth-of-type(2) {
         transform: rotate(45deg);
         transform-origin: 50% 50%;
-        &::after { transform: rotate(-90deg); }
+        &::after {
+          transform: rotate(-90deg);
+          transition-delay: 0ms;
+        }
       }
     }
   }
@@ -73,8 +88,9 @@ const Line = styled.span`
       display: inline-block;
       height: ${LINE_HEIGHT}px;
       position: absolute;
-      transition-delay: ${TRANSITION_TIME}ms;
-      transition: all ${TRANSITION_TIME}ms ease;
+      transition-property: transform, background-color;
+      transition-duration: ${TRANSITION_TIME}ms;
+      transition-delay: ${TRANSITION_TIME}ms, 0ms;
       width: ${CONTAINER_WIDTH}px;
     }
   }

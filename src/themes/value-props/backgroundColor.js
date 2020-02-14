@@ -4,6 +4,4 @@ import { black, white } from '../colors';
 export const backgroundColor = theme('mode', {
   light: white,
   dark: black,
-  transparentLight: 'transparent',
-  transparentDark: 'transparent',
 });

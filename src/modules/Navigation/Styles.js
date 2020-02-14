@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { smallBlock, NAV_HEIGHT } from '../../helpers';
-import { backgroundColor, boxShadow, fontColor, collapsedBackgroundColor } from '../../themes/navigation';
+import { backgroundColor, boxShadow, fontColor, backgroundColorCollapsed } from '../../themes/navigation';
 
 export const NavigationContainer = styled.nav`
   ${smallBlock};
@@ -16,6 +16,7 @@ export const NavigationContainer = styled.nav`
   transition-delay: 100ms;
 
   .is-collapsed & {
-    background-color: ${collapsedBackgroundColor};
+    background-color: ${backgroundColorCollapsed};
+    box-shadow: 0 0 4rem -1rem black;
   }
 `;

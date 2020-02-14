@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { smallBlock } from '../../helpers';
+import { backgroundColor, borderColor, fontColor } from '../../themes/value-props';
 
 export const ValuePropsContainer = styled.section`
   height: 175px;
@@ -8,22 +9,33 @@ export const ValuePropsContainer = styled.section`
 
   & > * {
     ${smallBlock};
+    background-color: ${backgroundColor};
+    border-bottom: 1px solid ${borderColor};
+    border-top: 1px solid ${borderColor};
+    display: flex;
+    flex: 1;
+    flex-direction: column;
     justify-content: center;
     padding: 20px;
-    flex: 1;
-    background-color: rgb(100, 181, 246);
-    &:nth-of-type(2) { background-color: rgb(30, 136, 229); }
-    &:nth-of-type(3) { background-color: rgb(21, 101, 192); }
+
+    &:not(:last-of-type) {
+      border-right: 1px solid ${borderColor};
+    }
 
     h2 {
+      color: ${fontColor};
       font-size: 16px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+      text-align: center;
       text-transform: uppercase;
     }
 
     p {
-      font-size: 14px;
-      line-height: 1.35;
+      color: ${fontColor};
+      font-size: 12px;
+      line-height: 1.5;
+      max-width: 360px;
+      text-align: center;
     }
   }
 `

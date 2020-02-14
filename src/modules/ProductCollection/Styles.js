@@ -5,6 +5,8 @@ import { backgroundColor, borderColor, fontColor } from '../../themes/product-co
 export const ProductCollectionContainer = styled.section`
   align-items: stretch;
   background-color: ${backgroundColor};
+  border-bottom: 1px solid ${borderColor};
+  border-top: 1px solid ${borderColor};
   display: flex;
   height: 250px;
   overflow: hidden;

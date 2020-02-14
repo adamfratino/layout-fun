@@ -9,8 +9,8 @@ import {
   Header,
   Hero,
   ProductCollection,
-  // ProductBlock,
-  // ValueProps,
+  ProductBlock,
+  ValueProps,
   // HorizontalScroll,
   Footer,
 } from './modules';
@@ -44,10 +44,11 @@ const App = () => {
         <Header position={scroll.position} />
         <Hero />
         <ProductCollection count={5} />
-        {/* <ProductBlock />
+        <ProductBlock />
         <ProductBlock reverse />
         <ProductBlock />
         <ValueProps count={3} />
+        {/* 
         <HorizontalScroll count={4} /> */}
         <Footer />
       </Main>
@@ -67,6 +68,6 @@ const Main = styled.main`
 
   & > * {
     scroll-snap-align: start;
-    scroll-snap-stop: always;
+    /* scroll-snap-stop: always; */
   }
 `

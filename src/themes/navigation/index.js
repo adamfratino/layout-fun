@@ -1,15 +1,17 @@
 import { backgroundColor } from './backgroundColor';
+import { backgroundColorCollapsed } from './backgroundColorCollapsed';
 import { boxShadow } from './boxShadow';
-import { collapsedBackgroundColor } from './collapsedBackgroundColor';
 import { fontColor } from './fontColor';
 import { hamburgerLineColor } from './hamburgerLineColor';
+import { hamburgerLineColorHover } from './hamburgerLineColorHover';
 import { hoverLineColor } from './hoverLineColor';
 
 export {
   backgroundColor,
+  backgroundColorCollapsed,
   boxShadow,
-  collapsedBackgroundColor,
   fontColor,
   hamburgerLineColor,
+  hamburgerLineColorHover,
   hoverLineColor,
 };
