@@ -3,7 +3,6 @@ import { smallBlock } from '../../helpers';
 import { backgroundColor, borderColor, fontColor } from '../../themes/value-props';
 
 export const ValuePropsContainer = styled.section`
-  height: 175px;
   display: flex;
   align-items: stretch;
 
@@ -16,7 +15,7 @@ export const ValuePropsContainer = styled.section`
     flex: 1;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    padding: 60px 20px;
 
     &:not(:last-of-type) {
       border-right: 1px solid ${borderColor};

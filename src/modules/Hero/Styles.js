@@ -3,13 +3,14 @@ import { h1, h4 } from '../../helpers';
 import { backgroundColor, fontColor } from '../../themes/hero';
 
 export const HeroContainer = styled.section`
+  align-items: center;
   background-color: ${backgroundColor};
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  height: calc(100vh - 80px);
   justify-content: center;
   padding: 40px;
-  height: calc(100vh - 80px);
+  text-align: center;
 
   h1 {
     ${h1};
