@@ -1,12 +1,14 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
+import { navigation } from '../../../themes/active-themes';
 import { NavigationContainer } from './Styles';
-import { Hamburger } from './Components';
+import { Links, Hamburger } from './Components';
 
 const Navigation = () => (
-  <ThemeProvider theme={{ mode: 'dark' }}>
+  <ThemeProvider theme={{ mode: navigation }}>
     <NavigationContainer>
       <p>Navigation</p>
+      <Links />
       <Hamburger />
     </NavigationContainer>
   </ThemeProvider>

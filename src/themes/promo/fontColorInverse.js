@@ -1,8 +1,8 @@
 import theme from 'styled-theming';
-import { black, white } from '../colors';
+import { black, white, red } from '../colors';
 
 export const fontColorInverse = theme('mode', {
-  light: white,
+  light: red,
   dark: black,
   primary: white,
 });

@@ -11,6 +11,7 @@ export const NavigationContainer = styled.nav`
   height: ${NAV_HEIGHT}px;
   justify-content: space-between;
   padding: 20px;
+  position: relative;
   transition: all 200ms ease;
   transition-delay: 100ms;
 

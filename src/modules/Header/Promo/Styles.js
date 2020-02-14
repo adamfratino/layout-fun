@@ -9,6 +9,7 @@ export const PromoContainer = styled.aside`
   height: ${PROMO_HEIGHT}px;
   justify-content: center;
   position: relative;
+  z-index: 1;
 
   span {
     color: ${fontColorInverse};
