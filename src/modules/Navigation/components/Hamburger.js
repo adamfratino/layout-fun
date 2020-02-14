@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { hamburgerLineColor } from '../../../themes/navigation';
 
-const Hamburger = () => {
+export const Hamburger = () => {
   const [isFlyoutOpen, toggleFlyout] = useState(false);
 
   const handler = () => toggleFlyout(!isFlyoutOpen);
@@ -18,8 +18,6 @@ const Hamburger = () => {
     </Container>
   );
 };
-
-export default Hamburger;
 
 const CONTAINER_HEIGHT = 20;
 const CONTAINER_WIDTH = CONTAINER_HEIGHT * 1.25;

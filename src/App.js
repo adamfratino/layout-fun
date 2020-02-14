@@ -8,7 +8,7 @@ import styled from 'styled-components';
 import {
   Header,
   Hero,
-  // ProductCollection,
+  ProductCollection,
   // ProductBlock,
   // ValueProps,
   // HorizontalScroll,
@@ -43,8 +43,8 @@ const App = () => {
       <Main ref={container}>
         <Header position={scroll.position} />
         <Hero />
-        {/* <ProductCollection count={5}/>
-        <ProductBlock />
+        <ProductCollection count={5} />
+        {/* <ProductBlock />
         <ProductBlock reverse />
         <ProductBlock />
         <ValueProps count={3} />

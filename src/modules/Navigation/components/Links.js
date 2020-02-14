@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { hoverLineColor } from '../../../themes/navigation';
 
-const Links = () => (
+export const Links = () => (
   <LinksContainer>
     <Link>Charles</Link>
     <Link>Bronson</Link>
@@ -10,8 +10,6 @@ const Links = () => (
     <Link>Club</Link>
   </LinksContainer>
 );
-
-export default Links;
 
 const LinksContainer = styled.ul`
   align-items: center;

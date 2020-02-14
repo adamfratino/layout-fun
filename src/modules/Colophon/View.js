@@ -5,7 +5,7 @@ import { backgroundColorColophon, fontColor } from '../../themes/footer';
 
 const Colophon = () => (
   <ColophonContainer>
-    Colophon
+    Copyright 2020 All Rights Reserved; Not be me, though.
   </ColophonContainer>
 );
 
@@ -15,5 +15,7 @@ const ColophonContainer = styled.aside`
   ${smallBlock};
   background-color: ${backgroundColorColophon};
   color: ${fontColor};
+  font-size: 8px;
   height: 60px;
+  padding: 20px;
 `;
