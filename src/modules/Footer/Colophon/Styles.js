@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { darken } from 'polished';
-import { smallBlock } from '../../../StyleHelpers';
+import { smallBlock } from '../../../helpers';
 
 export const ColophonContainer = styled.aside`
   ${smallBlock};

@@ -1,6 +1,6 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import { NAV_HEIGHT } from '../../../../StyleHelpers';
+import { hamburgerLineColor } from '../../../../themes/navigation';
 
 const Hamburger = () => {
   const [isFlyoutOpen, toggleFlyout] = useState(false);
@@ -52,7 +52,7 @@ const Container = styled.div`
 `;
 
 const Line = styled.span`
-  background: black;
+  background-color: ${hamburgerLineColor};
   display: inline-block;
   height: ${LINE_HEIGHT}px;
   position: absolute;
@@ -70,7 +70,7 @@ const Line = styled.span`
     margin-top: -${LINE_HEIGHT / 2}px;
 
     &::after {
-      background: black;
+      background-color: ${hamburgerLineColor};
       content: "";
       display: inline-block;
       height: ${LINE_HEIGHT}px;

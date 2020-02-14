@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { h1, h4 } from '../../StyleHelpers';
+import { h1, h4 } from '../../helpers';
 
 export const HeroContainer = styled.section`
   display: flex;

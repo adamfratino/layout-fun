@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { darken } from 'polished';
-import { p, h2, cta } from '../../StyleHelpers';
+import { p, h2, cta } from '../../helpers';
 
 export const ProductBlockContainer = styled.section`
   display: flex;

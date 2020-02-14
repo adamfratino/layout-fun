@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { smallBlock } from '../../StyleHelpers';
+import { smallBlock } from '../../helpers';
 
 export const FooterContainer = styled.footer`
   ${smallBlock};
